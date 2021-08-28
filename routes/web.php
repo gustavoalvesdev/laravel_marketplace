@@ -16,6 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('/model', function () {
-    $products = \App\Product::all();
-    return $products;
+    //$products = \App\Product::all();
+
+    //$user = new \App\User();
+    $user = \App\User::find(1);
+    $user->name = 'Usuário Teste Editado...';
+
+    $user->save();
+
+    //return $products;
+
+    return \App\User::all();
 });
