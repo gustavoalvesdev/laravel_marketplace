@@ -29,5 +29,21 @@ Route::get('/model', function () {
     //return \App\User::all();
     //return \App\User::where('name', 'Creola Greenholt V')->get();
     //return \App\User::where('name', 'Creola Greenholt V')->first();
-    return \App\User::paginate(10);
+    //return \App\User::paginate(10);
+
+    // Mass Assignment - Atribuição em Massa
+
+    // $user = \App\User::create([
+    //     'name' => 'Nanderson Castro',
+    //     'email' => 'email100@email.com',
+    //     'password' => bcrypt('123345566')
+    // ]);
+
+    // Mass Update
+    // $user = \App\User::find(42);
+    // $user->update([
+    //     'name' => 'Atualizando com Mass Update'
+    // ]); // true ou false
+
+    return \App\User::all();
 });
