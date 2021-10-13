@@ -45,5 +45,20 @@ Route::get('/model', function () {
     //     'name' => 'Atualizando com Mass Update'
     // ]); // true ou false
 
-    return \App\User::all();
+    // Como eu faria para pegar a loja de um usuário
+    $user = \App\User::find(4);
+
+    //return $user->store; // 1 para 1 - retorna o objeto único (Store)  | n para n retorna collection de dados
+
+    //dd($user->store()->count());
+
+    // Pegar os produtos de uma loja
+    $loja = \App\Store::find(18);
+    //$loja->products->count();
+
+    // Pegar as lojas de uma categoria de uma loja
+    $categoria = \App\Category::find(1);
+    $categoria->products;
+
+    //return \App\User::all();
 });
