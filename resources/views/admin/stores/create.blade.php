@@ -48,7 +48,7 @@
                 <option value="{{ $user->id }}">{{ $user->name }}</option>
                 @endforeach
             </select>
-            <!-- form-control -->
+            <!-- form-control   -->
         </div>
         <!-- form-group -->
 
