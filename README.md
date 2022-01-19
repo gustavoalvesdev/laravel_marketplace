@@ -10,6 +10,7 @@ Marketplace utilizando Laravel na Versão 6.x
 - Crie uma base de dados com o nome que desejar
 - Depois altere o arquivo <b>.env</b> e insira as suas configurações de banco de dados nele, nas variáveis de ambiente que começam com DB_
 - Depois esse: `php artisan key:generate`
+- Rode o comando `php artisan migrate` para gerar as tabelas do banco de dados
 
 ### Para rodar o projeto
 - Digite o comando: `php artisan serve`
