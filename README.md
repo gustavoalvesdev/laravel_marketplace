@@ -7,6 +7,8 @@ Marketplace utilizando Laravel na Versão 6.x
 - Faça o clone deste repositório para a sua máquina
 - Rode o comando: `composer install`
 - Renomeie o arquivo <b>.env.example</b> para <b>.env</b>
+- Crie uma base de dados com o nome que desejar
+- Depois altere o arquivo <b>.env</b> e insira as suas configurações de banco de dados nele, nas variáveis de ambiente que começam com DB_
 - Depois esse: `php artisan key:generate`
 
 ### Para rodar o projeto
